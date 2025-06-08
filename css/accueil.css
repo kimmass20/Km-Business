@@ -1,0 +1,45 @@
+section{
+    background: linear-gradient(rgba(0, 0, 0.6), rgba(0,0,0, 0.6)), url('logo\ km\ business.jpg');
+    background-position: center;
+    padding: 10rem;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+section h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+section p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.best-produits{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns:0fr 0fr 0fr 0fr;
+    justify-content: center;
+    gap: 1.5rem;
+}
+main h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+.produit{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.produit img{
+    height: 25rem;
+    width: 20rem;
+    border-radius: 5px;
+}
+.produit:hover{
+    transform: translateY(5px);
+    box-shadow: 0px 3px 3px 3px;
+}
+.voir-boutique{
+    background-color: black;
+    padding: 10px;
+}

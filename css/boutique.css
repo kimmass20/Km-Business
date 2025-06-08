@@ -1,1 +1,24 @@
-
+main h2{
+    margin: 2rem 0rem 0rem 5rem;
+    font-size: 2.5rem;
+    
+}
+.grille-produit{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns:0fr 0fr 0fr 0fr;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.produit{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.produit:hover{
+    transform: translateY(5px);
+}
+.produit img{
+    height: 25rem;
+    width: 20rem;
+    border-radius: 5px;
+}
