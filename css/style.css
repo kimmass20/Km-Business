@@ -24,6 +24,12 @@ nav ul li a:hover{
     color: rgb(212, 175, 55);
     font-size: larger;
 }
+.hamburger{
+    width: 30px;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
 .logo{
     background-color: black;
     color: rgb(212, 175, 55);;

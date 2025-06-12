@@ -1,0 +1,27 @@
+main{
+    margin: 1rem 2rem;
+}
+
+main h1{
+    font-size: 2rem;
+}
+
+section{
+    margin: 1rem 2rem;
+}
+.contenu-apropos h2{
+    font-size: 1.8rem;
+}
+
+.contenu-apropos p{
+    font-size: 1.2rem;
+    margin: 15px;
+
+}
+
+.contenu-apropos ol{
+    margin-left: 8rem;
+}
+.contenu-apropos ol li{
+    margin-bottom: 8px;
+}

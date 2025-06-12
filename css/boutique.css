@@ -1,24 +1,49 @@
 main h2{
     margin: 2rem 0rem 0rem 5rem;
     font-size: 2.5rem;
-    
+   
 }
 .grille-produit{
-    margin: 2rem;
+    margin: 0px;
     display: grid;
     grid-template-columns:0fr 0fr 0fr 0fr;
     justify-content: center;
     gap: 1.5rem;
 }
 .produit{
-    border: 2px solid black;
     border-radius: 10px;
 }
 .produit:hover{
     transform: translateY(5px);
 }
 .produit img{
-    height: 25rem;
+    height: 50%;
     width: 20rem;
     border-radius: 5px;
+    object-fit: cover;
+}
+.produit h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.produit .description{
+    margin: 0 5%;
+    margin-bottom: 5px;
+}
+.produit .prix{
+    text-align: center;
+    font-size: 1.5rem;
+    color:rgb(212, 175, 55);
+}
+.produit .commander{
+    background-color: black;
+    padding: 10px;
+}
+.produit a{
+    margin-left: 38%;
+}
+.produit p a button{
+    background-color:rgb(212, 175, 55) ;
+    padding: 5px;
+    border-radius: 10px;
 }
