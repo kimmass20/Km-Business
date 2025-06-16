@@ -40,3 +40,74 @@ footer{
     background-color: rgb(212, 175, 55);;
     padding: 50px;
 }
+
+@media screen and (max-width:1024px) {
+    header nav ul li a{
+        font-size: 1.6rem;
+    }
+    header nav ul{
+        position: absolute;
+        top: 5rem;
+        right: 25px;
+    }
+    header nav ul li a:hover{
+        font-size: 2rem;
+    }
+
+    
+    footer{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header{
+        padding: 90px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    .hamburger{
+    width: 70px;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    }
+
+    .logo{
+        position: absolute;
+        left: 1rem;
+        top: 2rem;
+    }
+
+    nav ul.active{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 5px;
+        right:0px;
+        background-color: white;
+        width: 30%;
+        padding:1rem;
+    }
+
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+
+    nav ul li a:hover{
+        font-size: 2rem;
+    }
+
+    footer{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 30px;
+    }
+
+}
