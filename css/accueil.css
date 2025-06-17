@@ -1,19 +1,28 @@
 section{
     background: linear-gradient(rgba(0, 0, 0.6), rgba(0,0,0, 0.6)), url('logo\ km\ business.jpg');
+    background-attachment: fixed;
     background-position: center;
-    padding: 10rem;
+    padding: 15rem;
     color: white;
     text-align: center;
     border-radius: 10px;
 }
+
 section h2{
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+
 section p{
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
+
+section a button{
+    font-size: 1.8rem;
+    border-radius: 10px;
+ }
+
 .best-produits{
     margin: 2rem;
     display: grid;
@@ -21,42 +30,65 @@ section p{
     justify-content: center;
     gap: 1.5rem;
 }
+
 main h2{
     text-align: center;
     font-size: 2rem;
     margin-top: 3rem;
 }
+
 .produit{
     border-radius: 10px;
 }
+
 .produit img{
     height: 25rem;
     width: 20rem;
     border-radius: 5px;
     object-fit: cover;
 }
+
 .produit:hover{
     transform: translateY(5px);
     box-shadow: 0px 3px 3px 3px rgb(212, 175, 55) ;
 }
+
 .voir-boutique{
     background-color: black;
     padding: 10px;
 }
 
-@media screen and (max-width: 1024px) {
-    section{
-        
-    }
+.voir-boutique a button{
+    padding: 10px;
+    border-radius: 10px;
+}
 
+@media screen and (max-width: 1024px) {
     .best-produits {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and (max-width:820px) {
+@media screen and (max-width:990px){
+    .produit img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    section h2{
+        font-size: 3rem;
+    }
+
+    section p{
+        font-size: 2rem;
+    }
+
     .best-produits{
         grid-template-columns: repeat(2,1fr); 
+    }
+    .produit img{
+        width: 100%;
     }
 }
 
@@ -83,9 +115,9 @@ main h2{
     .produit {
         margin-bottom: 1rem;
     }
-    
-    .produit .commander {
-        padding: 0.8rem;
+
+    .produit img{
+        height: 400px;
     }
     
     main h2 {
@@ -95,6 +127,23 @@ main h2{
 }
 
 @media screen and (max-width: 360px) {
+    section{
+        text-align: center;
+        padding: 5rem;
+    }
+    section h2{
+        font-size: 1.8rem;
+    }
+
+    section p{
+        font-size: 1.5rem;
+    }
+
+    section a button{
+        padding: 5px;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
     .produit img {
         height: 160px;
         width: 100%;
@@ -108,4 +157,3 @@ main h2{
         font-size: 1.5rem;
     }
 }
-
