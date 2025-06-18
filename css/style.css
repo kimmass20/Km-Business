@@ -41,13 +41,23 @@ footer{
     padding: 50px;
 }
 
+@media screen and (max-width:1280px) {
+    header nav ul li a{
+        font-size: 1.5rem;
+    }
+}
+
 @media screen and (max-width:1024px) {
      header nav ul {
         display: none;
     }
 
     header nav ul li a{
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    header nav ul li a:hover{
+        font-size: 2.5rem;
     }
 
     .hamburger{
@@ -65,7 +75,7 @@ footer{
         top: 5px;
         right:0px;
         background-color: white;
-        width: 50%;
+        width: 30%;
         padding:1rem;
     }
 
@@ -76,9 +86,13 @@ footer{
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:912px) {
     header nav ul li a{
         font-size: 1.5rem;
+    }
+
+    header nav ul li a:hover{
+        font-size: 2rem;
     }
 
     .hamburger{
@@ -162,9 +176,9 @@ footer{
         text-align: center;
         font-size: 1.4rem;
     }
-}
+} 
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:380px) {
     header nav ul li a{
         font-size: 0.8rem;
     }
@@ -175,6 +189,6 @@ footer{
 
     footer{
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }

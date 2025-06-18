@@ -1,13 +1,14 @@
 main h2{
-    margin: 2rem 0rem 0rem 5rem;
-    font-size: 2.5rem;
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
    
 }
 
 .grille-produit{
     margin: 0px;
     display: grid;
-    grid-template-columns:0fr 0fr 0fr 0fr;
+    grid-template-columns:repeat(4,1fr);
     justify-content: center;
     gap: 1.5rem;
 }
@@ -30,16 +31,18 @@ main h2{
 .produit h3{
     text-align: center;
     margin-bottom: 10px;
+    font-size: 2rem;
 }
 
 .produit .description{
     margin: 0 5%;
     margin-bottom: 5px;
+    font-size: 1.5rem;
 }
 
 .produit .prix{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 3rem;
     color:rgb(212, 175, 55);
 }
 
@@ -57,16 +60,70 @@ main h2{
     padding: 5px;
     border-radius: 10px;
 }
-@media screen and (max-width:768px) {
+
+
+
+@media screen and (max-width:1280px) {
+    .grille-produit{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    .produit h3{
+        font-size: 1.8rem;
+    }
+    
+    .produit .description{
+        font-size: 1.2rem;
+    }
+
+    .produit .prix{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:912px) {
     .grille-produit{
         grid-template-columns: repeat(2,1fr);
     }
+
+    .produit img{
+        width: 100%;
+    }
+
+    .produit h3{
+        font-size: 2.2rem;
+    }
+    
+    .produit .description{
+        font-size: 1.5rem;
+    }
+
+    .produit .prix{
+        font-size: 2.5rem;
+    }
 }
+
+@media screen and (max-width:550px){
+    .produit h3{
+        font-size: 1.5rem;
+    }
+    
+    .produit .description{
+        font-size: 1rem;
+    }
+
+    .produit .prix{
+        font-size: 2rem;
+    }
+}
+
 @media screen and (max-width:412px){
     .grille-produit{
         grid-template-columns: 1fr;
     }
     .produit img{
-        width: 100%;
+        margin-top: 2rem;
     }
 }
