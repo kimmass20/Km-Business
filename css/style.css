@@ -39,6 +39,8 @@ nav ul li a:hover{
 footer{
     background-color: rgb(212, 175, 55);;
     padding: 50px;
+    text-align: center;
+    font-size: 2rem;
 }
 
 @media screen and (max-width:1280px) {
@@ -81,7 +83,6 @@ footer{
 
     footer{
         text-align: center;
-        font-size: 2rem;
         padding: 30px;
     }
 }
