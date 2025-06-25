@@ -25,6 +25,7 @@ nav ul li a:hover{
     font-size: larger;
 }
 .hamburger{
+    display: none;
     width: 30px;
     position: absolute;
     top: 8px;
@@ -97,7 +98,8 @@ footer{
     }
 
     .hamburger{
-        width: 50px;
+        display: inline;
+        width: 40px;
     }
 
     footer{
@@ -152,7 +154,7 @@ footer{
     header nav ul li a:hover{
         font-size: 1.5rem;
     }
-
+    
     .hamburger{
         width: 30px;
     }
