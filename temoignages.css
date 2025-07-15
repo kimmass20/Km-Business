@@ -1,0 +1,89 @@
+main{
+    margin: 20px;
+}
+main h1{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.div-temoignage{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.carte-temoignage .temoignage{
+    font-size: 1.2rem;
+ }
+
+.carte-temoignage .auteur{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.carte-temoignage .auteur img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 41%;
+}
+
+
+@media screen and (max-width:1024px){
+    .div-temoignage{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    main h1{
+        text-align: center;
+        font-size: 3rem;
+    }   
+    .carte-temoignage .temoignage{
+        font-size: 1.8rem;
+    }
+
+    .carte-temoignage .auteur{
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width:860px){
+     main h1{
+        text-align: center;
+        font-size: 3rem;
+    }   
+    .carte-temoignage .temoignage{
+        font-size: 1.5rem;
+    }
+
+    .carte-temoignage .auteur{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .div-temoignage{
+        grid-template-columns: 1fr;
+    }
+
+     main h1{
+        font-size: 2rem;
+    }   
+    .carte-temoignage .temoignage{
+        font-size: 1.2rem;
+    }
+
+    .carte-temoignage .auteur{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:390px) {
+    main h1{
+        font-size: 1.6rem;
+    }
+}
