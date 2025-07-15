@@ -1,0 +1,197 @@
+section{
+    background: linear-gradient(rgba(0, 0, 0.6), rgba(0,0,0, 0.6)), url('logo-km-business.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    padding: 10rem;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+section h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.best-produits{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.produit{
+    border-radius: 10px;
+}
+
+.produit img{
+    height: 25rem;
+    width: 20rem;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.produit:hover{
+    transform: translateY(5px);
+    box-shadow: 0px 3px 3px 3px rgb(212, 175, 55) ;
+}
+
+.voir-boutique{
+    background-color: black;
+    padding: 10px;
+}
+
+.voir-boutique a button{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1280px) {
+    section h2{
+        font-size: 4rem ;
+    }
+
+    section p{
+        font-size: 2rem;
+    }
+
+    .produit img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section h2{
+        font-size: 3rem;
+    }
+
+    .best-produits {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:1000px){
+    .produit img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:912px) {
+    section h2{
+        font-size: 3rem;
+    }
+
+    section p{
+        font-size: 2rem;
+    }
+
+    .best-produits{
+        grid-template-columns: repeat(2,1fr); 
+    }
+    .produit img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section{
+        padding: 8rem;
+    }
+    .best-produits {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+    
+    .produit img {
+        height: 250px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:560px) {
+    section{
+        padding: 6rem;
+    }
+    section h2{
+        font-size: 2.2rem;
+    }
+
+    section p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .best-produits {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.5rem;
+        margin: 20px;
+    }
+    
+    .produit {
+        margin-bottom: 1rem;
+    }
+
+    .produit img{
+        height: 400px;
+    }
+    
+    main h2 {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width:412px) {
+    section{
+        padding: 5rem;
+    }
+
+    section h2{
+        font-size: 2.3rem;
+    }
+
+    section p{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    section{
+        text-align: center;
+        padding: 4rem;
+    }
+    section h2{
+        font-size: 1.8rem;
+    }
+
+    section p{
+        font-size: 1.5rem;
+    }
+
+    .produit img {
+        height: 160px;
+        width: 100%;
+    }
+    
+    .produit .description {
+        font-size: 1.1rem;
+    }
+    
+    .produit .prix {
+        font-size: 1.5rem;
+    }
+}
